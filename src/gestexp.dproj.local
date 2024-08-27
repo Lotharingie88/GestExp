@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/22 10:20:04.000.738,C:\user\delphi\projets\gestexp\src\uDB.pas=</Transaction>
+    <Transaction>2024/08/22 10:20:23.000.882,=C:\user\delphi\projets\gestexp\src\Unit3.pas</Transaction>
+    <Transaction>2024/08/22 10:20:56.000.892,=C:\user\delphi\projets\gestexp\src\Unit3.pas</Transaction>
+    <Transaction>2024/08/22 10:21:46.000.748,C:\user\delphi\projets\gestexp\src\uDB.pas=C:\user\delphi\projets\gestexp\src\Unit3.pas</Transaction>
+    <Transaction>2024/08/22 10:21:46.000.748,C:\user\delphi\projets\gestexp\src\uDB.dfm=C:\user\delphi\projets\gestexp\src\Unit3.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

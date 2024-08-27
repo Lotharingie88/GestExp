@@ -1,0 +1,402 @@
+object Fadminist: TFadminist
+  Left = 0
+  Top = 0
+  ActiveControl = TabCult
+  Caption = 'Administration'
+  ClientHeight = 481
+  ClientWidth = 385
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Position.Y = 8.000000000000000000
+    Size.Width = 385.000000000000000000
+    Size.Height = 481.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TabControl1: TTabControl
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 705.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        705s
+        0s
+        705s
+        0s
+        705s
+        0s
+        705s
+        0s)
+      object TabAdmin: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 98.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Administration'
+        OnClick = TabAdminClick
+        ExplicitSize.cx = 98.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      object TabChept: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 61.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Cheptel'
+        OnClick = TabCheptClick
+        ExplicitSize.cx = 61.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      object TabCult: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 59.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Culture'
+        OnClick = TabCultClick
+        ExplicitSize.cx = 59.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      object TabExploit: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 83.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Exploitation'
+        OnClick = TabExploitClick
+        ExplicitSize.cx = 83.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
+    object PAdmin: TPanel
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 409.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btParam: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Param'#232'trage'
+        OnClick = btParamClick
+      end
+      object BtUser: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Gestion d'#39'utilisateur'
+        OnClick = BtUserClick
+      end
+      object btImport: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Import de donn'#233'es'
+        OnClick = btImportClick
+      end
+      object btExport: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Export de donn'#233'es'
+        OnClick = btExportClick
+      end
+      object btLog: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 232.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Visualisation des logs'
+        OnClick = btLogClick
+      end
+      object btStat: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 288.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Statistique'
+        OnClick = btStatClick
+      end
+      object btQuit: TButton
+        Position.X = 112.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Quitter'
+        OnClick = btQuitClick
+      end
+      object btPrec: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Prec.'
+      end
+      object btSynch: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 336.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = 'Synchronisation'
+        OnClick = btSynchClick
+      end
+    end
+    object PCultur: TPanel
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 409.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 2
+      object btEtat: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Etat d'#39'ensemble'
+        OnClick = btEtatClick
+      end
+      object btFourrag: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Stock fourrage'
+        OnClick = btFourragClick
+      end
+      object btCereal: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Culture c'#233'r'#233'ale'
+        OnClick = btCerealClick
+      end
+      object btPhyto: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Phytosanitaire'
+        OnClick = btPhytoClick
+      end
+      object btPrec3: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Prec.'
+      end
+      object btQuit3: TButton
+        Position.X = 128.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Quitter'
+        OnClick = btQuit3Click
+      end
+    end
+    object PExploit: TPanel
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 409.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 3
+      object btIdent: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Identification'
+        OnClick = btIdentClick
+      end
+      object btPharma: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Pharmacie v'#233't'#232'rinaire'
+        OnClick = btPharmaClick
+      end
+      object btPrec4: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Prec.'
+      end
+      object btQuit4: TButton
+        Position.X = 96.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Quitter'
+        OnClick = btQuit4Click
+      end
+      object btParcel: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Parcellaire'
+        OnClick = btParcelClick
+      end
+    end
+    object PCheptel: TPanel
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 385.000000000000000000
+      Size.Height = 409.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 4
+      object btGlob: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Suivi global'
+        OnClick = btGlobClick
+      end
+      object btIndiv: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Suivi individuel'
+        OnClick = btIndivClick
+      end
+      object btPrec2: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Prec.'
+      end
+      object btQuit2: TButton
+        Position.X = 128.000000000000000000
+        Position.Y = 376.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Quitter'
+        OnClick = btQuit2Click
+      end
+      object btVente: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 120.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Vente'
+        OnClick = btVenteClick
+      end
+      object btProd: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Production'
+        OnClick = btProdClick
+      end
+      object btPatho: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 240.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Pathologie'
+        OnClick = btPathoClick
+      end
+    end
+  end
+end

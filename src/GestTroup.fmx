@@ -1,0 +1,239 @@
+object Ftroupeau: TFtroupeau
+  Left = 0
+  Top = 0
+  Caption = 'Gestion Troupeau'
+  ClientHeight = 481
+  ClientWidth = 385
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Size.Width = 385.000000000000000000
+    Size.Height = 481.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Effectif :'
+      TabOrder = 0
+    end
+    object edEffect: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 56.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object sgFemel: TStringGrid
+      CanFocus = True
+      ClipChildren = True
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 369.000000000000000000
+      Size.Height = 129.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      RowCount = 1
+      Viewport.Width = 369.000000000000000000
+      Viewport.Height = 129.000000000000000000
+    end
+    object btPrec: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 448.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Prec.'
+    end
+    object Button2: TButton
+      Position.X = 88.000000000000000000
+      Position.Y = 448.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Button2'
+    end
+    object Button3: TButton
+      Position.X = 160.000000000000000000
+      Position.Y = 448.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Button3'
+    end
+    object Button4: TButton
+      Position.X = 240.000000000000000000
+      Position.Y = 448.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Button4'
+    end
+    object btQuit: TButton
+      Position.X = 312.000000000000000000
+      Position.Y = 448.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Quitter'
+      OnClick = btQuitClick
+    end
+    object Label2: TLabel
+      Position.X = 128.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Femelle :'
+      TabOrder = 8
+    end
+    object Label3: TLabel
+      Position.X = 256.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'M'#226'le :'
+      TabOrder = 9
+    end
+    object edFem: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      Position.X = 184.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edMal: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 11
+      Position.X = 296.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object sgMal: TStringGrid
+      CanFocus = True
+      ClipChildren = True
+      Position.X = 8.000000000000000000
+      Position.Y = 264.000000000000000000
+      Size.Width = 369.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      RowCount = 1
+      Viewport.Width = 369.000000000000000000
+      Viewport.Height = 145.000000000000000000
+    end
+    object Label4: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Femelle :'
+      TabOrder = 13
+    end
+    object Label5: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'M'#226'le :'
+      TabOrder = 14
+    end
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Position.X = 64.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object NavigatorBindSourceDB2: TBindNavigator
+    Position.X = 64.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 240.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    DataSource = BindSourceDB2
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object qTroup: TFDQuery
+    ConnectionName = 'gexpl'
+    Left = 328
+    Top = 8
+  end
+  object dsGexpl: TDataSource
+    DataSet = qGrid
+    Left = 160
+    Top = 216
+  end
+  object qGrid: TFDQuery
+    ConnectionName = 'gexpl'
+    SQL.Strings = (
+      'select * from cheptel')
+    Left = 344
+    Top = 208
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = qGrid
+    ScopeMappings = <>
+    Left = 72
+    Top = 40
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 124
+    Top = 37
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      GridControl = sgFemel
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB2
+      GridControl = sgMal
+      Columns = <>
+    end
+  end
+  object qGrid2: TFDQuery
+    ConnectionName = 'gexpl'
+    SQL.Strings = (
+      'select * from cheptel')
+    Left = 328
+    Top = 408
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = qGrid2
+    ScopeMappings = <>
+    Left = 8
+    Top = 416
+  end
+end

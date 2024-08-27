@@ -1,0 +1,28 @@
+object FPharma: TFPharma
+  Left = 0
+  Top = 0
+  Caption = 'Pharmacie veterinaire'
+  ClientHeight = 485
+  ClientWidth = 381
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Size.Width = 381.000000000000000000
+    Size.Height = 485.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btQuit: TButton
+      Position.X = 264.000000000000000000
+      Position.Y = 456.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Quitter'
+      OnClick = btQuitClick
+    end
+  end
+end

@@ -1,0 +1,572 @@
+object Fanimal: TFanimal
+  Left = 0
+  Top = 0
+  Caption = 'Gestion Animal'
+  ClientHeight = 481
+  ClientWidth = 385
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Size.Width = 385.000000000000000000
+    Size.Height = 489.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object eIdent: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Position.X = 88.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button1: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 456.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Prec.'
+    end
+    object btSave: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 456.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Enregistrer'
+      OnClick = btSaveClick
+    end
+    object btModif: TButton
+      Position.X = 152.000000000000000000
+      Position.Y = 456.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Modifier'
+      OnClick = btModifClick
+    end
+    object btReset: TButton
+      Position.X = 224.000000000000000000
+      Position.Y = 456.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Annuler'
+      OnClick = btResetClick
+    end
+    object btQuit: TButton
+      Position.X = 296.000000000000000000
+      Position.Y = 456.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Quitter'
+      OnClick = btQuitClick
+    end
+    object eNom: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Position.X = 88.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object GroupBox1: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sexe'
+      TabOrder = 7
+      object rbMal: TRadioButton
+        GroupName = 'sex'
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        Text = 'M'#226'le'
+      end
+      object rbFem: TRadioButton
+        GroupName = 'sex'
+        Position.X = 120.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 81.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        Text = 'Femelle'
+      end
+    end
+    object GroupBox2: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Type Racial'
+      TabOrder = 8
+      object cbRpere: TComboBox
+        Position.X = 64.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+      end
+      object cbRmere: TComboBox
+        Position.X = 64.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+      end
+      object cbRindiv: TComboBox
+        Position.X = 64.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 39
+      end
+      object eRacP: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 40
+        Position.X = 168.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object eRacM: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 41
+        Position.X = 168.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object eRacI: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 42
+        Position.X = 168.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label3: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'P'#232're'
+        TabOrder = 43
+      end
+      object Label4: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'M'#232're'
+        TabOrder = 44
+      end
+      object Label5: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Individu'
+        TabOrder = 45
+      end
+      object deDnaiss: TDateEdit
+        Date = 44843.000000000000000000
+        IsEmpty = True
+        Position.X = 88.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 46
+      end
+      object Label12: TLabel
+        Position.X = 208.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Date S :'
+        TabOrder = 47
+      end
+    end
+    object eIdentP: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 9
+      Position.X = 112.000000000000000000
+      Position.Y = 256.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object eIdentM: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      Position.X = 112.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object GroupBox3: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Transplantation embryonnaire'
+      TabOrder = 11
+      object rbEmbo: TRadioButton
+        GroupName = 'embr'
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        Text = 'Oui'
+      end
+      object rbEmbn: TRadioButton
+        GroupName = 'embr'
+        Position.X = 104.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        Text = 'Non'
+      end
+    end
+    object cbNaiss: TComboBox
+      Position.X = 264.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+    end
+    object GroupBox4: TGroupBox
+      Position.X = 200.000000000000000000
+      Position.Y = 320.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Avortement'
+      TabOrder = 13
+      object rbAvoro: TRadioButton
+        GroupName = 'avor'
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        Text = 'Oui'
+      end
+      object rbAvorn: TRadioButton
+        GroupName = 'avor'
+        Position.X = 104.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 38
+        Text = 'Non'
+      end
+    end
+    object GroupBox5: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Jumeaux'
+      TabOrder = 14
+      object rbJumo: TRadioButton
+        GroupName = 'jum'
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        Text = 'Oui'
+      end
+      object rbJumn: TRadioButton
+        GroupName = 'jum'
+        Position.X = 64.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 57.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        Text = 'Non'
+      end
+    end
+    object ePoi: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 15
+      Position.X = 64.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object GroupBox6: TGroupBox
+      Position.X = 144.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Poids pes'#233
+      TabOrder = 16
+      object rbPeso: TRadioButton
+        GroupName = 'poi'
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        Text = 'Oui'
+      end
+      object rbPesn: TRadioButton
+        GroupName = 'poi'
+        Position.X = 80.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        Text = 'Non'
+      end
+      object lbMaj: TLabel
+        StyledSettings = [Size]
+        Position.X = 88.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Times New Roman'
+        TextSettings.Font.StyleExt = {00040000000200000004000000}
+        TextSettings.FontColor = claBrown
+        Text = 'Mis '#224' jour le :'
+        TabOrder = 39
+      end
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Identification :'
+      TabOrder = 17
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nom :'
+      TabOrder = 18
+    end
+    object Label6: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 208.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Date Naissance :'
+      TabOrder = 19
+    end
+    object Label7: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 256.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Identification P'#232're :'
+      TabOrder = 20
+    end
+    object Label8: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Identification M'#232're :'
+      TabOrder = 21
+    end
+    object Label9: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Poids :'
+      TabOrder = 22
+    end
+    object Label10: TLabel
+      Position.X = 136.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Condition Naissance :'
+      TabOrder = 23
+    end
+    object Label11: TLabel
+      Position.X = 216.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Date E :'
+      TabOrder = 24
+    end
+    object GroupBox7: TGroupBox
+      Position.X = 240.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cause entr'#233'e'
+      TabOrder = 25
+      object cbEntree: TComboBox
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+      end
+    end
+    object GroupBox8: TGroupBox
+      Position.X = 240.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cause sortie'
+      TabOrder = 26
+      object cbSortie: TComboBox
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+      end
+    end
+    object GroupBox9: TGroupBox
+      Position.X = 232.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Exploitation naissance'
+      TabOrder = 27
+      object eExplOr: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 37
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object cbIndiv: TComboBox
+      Position.X = 88.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 28
+      Visible = False
+      OnChange = cbIndivChange
+      OnClick = cbIndivClick
+      OnExit = cbIndivExit
+    end
+    object deDent: TDateEdit
+      Date = 44843.000000000000000000
+      IsEmpty = True
+      Position.X = 272.000000000000000000
+      Position.Y = 136.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 29
+    end
+    object GroupBox10: TGroupBox
+      Position.X = 256.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'InsemArtif'
+      TabOrder = 30
+      object rbIao: TRadioButton
+        GroupName = 'IA'
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 37
+        Text = 'Oui'
+      end
+      object rbIan: TRadioButton
+        GroupName = 'IA'
+        Position.X = 64.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 38
+        Text = 'Non'
+      end
+    end
+    object deDsor: TDateEdit
+      Date = 44843.000000000000000000
+      IsEmpty = True
+      Position.X = 272.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 31
+    end
+  end
+  object qAnim: TFDQuery
+    ConnectionName = 'gexpl'
+    Left = 296
+    Top = 288
+  end
+end
