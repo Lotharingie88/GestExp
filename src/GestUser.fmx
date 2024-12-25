@@ -18,14 +18,6 @@ object Fgestuser: TFgestuser
     Size.PlatformDefault = False
     TabOrder = 0
     object cbProf: TComboBox
-      Items.Strings = (
-        'admin'
-        'employ'#233
-        'proprietaire'
-        'utilisateur avanc'#233
-        'veterinaire'
-        'visiteur')
-      ItemIndex = 0
       Position.X = 48.000000000000000000
       Position.Y = 48.000000000000000000
       Size.Width = 137.000000000000000000
@@ -172,11 +164,6 @@ object Fgestuser: TFgestuser
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
       object cbNom: TComboBox
-        Items.Strings = (
-          'Einstein'
-          'Thouvenot'
-          'Thouvenot')
-        ItemIndex = 0
         Size.Width = 129.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
@@ -194,11 +181,6 @@ object Fgestuser: TFgestuser
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
       object cbPren: TComboBox
-        Items.Strings = (
-          'Albert'
-          'Eric'
-          'Romain')
-        ItemIndex = 0
         Size.Width = 105.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
@@ -251,12 +233,6 @@ object Fgestuser: TFgestuser
       Size.PlatformDefault = False
     end
     object cbMeti: TComboBox
-      Items.Strings = (
-        'agriculteur'
-        'boucher'
-        'technicien'
-        'veterinaire')
-      ItemIndex = 0
       Position.X = 256.000000000000000000
       Position.Y = 48.000000000000000000
       Size.Width = 113.000000000000000000
@@ -266,35 +242,23 @@ object Fgestuser: TFgestuser
     end
   end
   object qGestuser: TFDQuery
-    ConnectionName = 'gexpl'
+    ConnectionName = 'GesEXP'
     Left = 320
     Top = 96
   end
   object FDQuerProfil: TFDQuery
-    Active = True
-    Connection = FDConnection1
+    Connection = DataModule3.FDGesEXP
     SQL.Strings = (
       'select cprofil,profil from profil order by profil')
     Left = 312
     Top = 248
   end
   object FDQuerMeti: TFDQuery
-    Active = True
-    Connection = FDConnection1
+    Connection = DataModule3.FDGesEXP
     SQL.Strings = (
       'select cmetier,metlib,metabrev from metier order by metlib')
     Left = 232
     Top = 248
-  end
-  object FDConnection1: TFDConnection
-    Params.Strings = (
-      'DriverID=SQLite'
-      'Database=C:\user\delphi\projets\gestexp\data\gestexp.db'
-      'LockingMode=Normal')
-    Connected = True
-    LoginPrompt = False
-    Left = 128
-    Top = 256
   end
   object BindSourceDB1: TBindSourceDB
     DataSet = FDQuerProfil
@@ -367,8 +331,7 @@ object Fgestuser: TFgestuser
     end
   end
   object FDQuerUser: TFDQuery
-    Active = True
-    Connection = FDConnection1
+    Connection = DataModule3.FDGesEXP
     SQL.Strings = (
       'select iduser,nom,prenom from utilisateur order by nom,prenom')
     Left = 40

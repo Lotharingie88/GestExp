@@ -271,12 +271,12 @@ object Fpatho: TFpatho
     end
   end
   object qPatho: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     Left = 312
     Top = 24
   end
   object qGPatho: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     Left = 328
     Top = 256
   end

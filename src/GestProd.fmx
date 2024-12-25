@@ -429,7 +429,7 @@ object FProd: TFProd
     end
   end
   object qProd: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     Left = 328
     Top = 24
   end

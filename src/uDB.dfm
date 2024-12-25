@@ -1,35 +1,38 @@
 object DataModule3: TDataModule3
-  Height = 480
-  Width = 640
-  object FDGesExpSqlite: TFDConnection
-    ConnectionName = 'GesExp'
+  Height = 533
+  Width = 323
+  object FDQuery1: TFDQuery
+    Connection = FDGesEXP
+    Left = 16
+    Top = 96
+  end
+  object FDQuerRace: TFDQuery
+    Connection = FDGesEXP
+    SQL.Strings = (
+      'select cirace, racnom from race order by racnom')
+    Left = 88
+    Top = 104
+  end
+  object FDQuery3: TFDQuery
+    Connection = FDGesEXP
+    Left = 40
+    Top = 168
+  end
+  object FDQuery4: TFDQuery
+    Connection = FDGesEXP
+    Left = 104
+    Top = 176
+  end
+  object FDGesEXP: TFDConnection
+    ConnectionName = 'GesEXP'
     Params.Strings = (
-      'Database=C:\user\delphi\projets\gestexp\data\gestexp.db'
+      
+        'Database=\\SYNAPSATNAS\Volume_2\sauvsyn7\user\delphi\projets\ges' +
+        'texp\data\gestexp.db'
+      'User_Name=root'
       'DriverID=SQLite')
     LoginPrompt = False
-    Left = 168
-    Top = 16
-  end
-  object FDQuery1: TFDQuery
-    Left = 128
-    Top = 200
-  end
-  object FDGesExpMysql: TFDConnection
-    ConnectionName = 'gestexp'
-    Params.Strings = (
-      'Database=gestexp'
-      'User_Name=root'
-      'DriverID=MySQL')
-    LoginPrompt = False
-    Left = 376
-    Top = 8
-  end
-  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
-    Left = 544
-    Top = 8
-  end
-  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
-    Left = 56
+    Left = 200
     Top = 16
   end
 end

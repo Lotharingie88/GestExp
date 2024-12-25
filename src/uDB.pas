@@ -13,11 +13,11 @@ uses
 
 type
   TDataModule3 = class(TDataModule)
-    FDGesExpSqlite: TFDConnection;
     FDQuery1: TFDQuery;
-    FDGesExpMysql: TFDConnection;
-    FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink;
-    FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
+    FDQuerRace: TFDQuery;
+    FDQuery3: TFDQuery;
+    FDQuery4: TFDQuery;
+    FDGesEXP: TFDConnection;
   private
     { Déclarations privées }
   public

@@ -50,9 +50,9 @@ object FImport: TFImport
         Size.Width = 353.000000000000000000
         Size.Height = 217.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
-        Viewport.Width = 349.000000000000000000
-        Viewport.Height = 213.000000000000000000
+        TabOrder = 37
+        Viewport.Width = 353.000000000000000000
+        Viewport.Height = 217.000000000000000000
       end
     end
     object Label2: TLabel

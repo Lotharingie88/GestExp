@@ -185,10 +185,12 @@ object FVente: TFVente
     end
   end
   object qRecap: TFDQuery
+    Connection = DataModule3.FDGesEXP
     Left = 320
     Top = 352
   end
   object qVente: TFDQuery
+    Connection = DataModule3.FDGesEXP
     Left = 304
     Top = 56
   end

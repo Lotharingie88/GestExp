@@ -43,8 +43,8 @@ object Ftroupeau: TFtroupeau
       Size.PlatformDefault = False
       TabOrder = 2
       RowCount = 1
-      Viewport.Width = 369.000000000000000000
-      Viewport.Height = 129.000000000000000000
+      Viewport.Width = 365.000000000000000000
+      Viewport.Height = 104.000000000000000000
     end
     object btPrec: TButton
       Position.X = 8.000000000000000000
@@ -138,8 +138,8 @@ object Ftroupeau: TFtroupeau
       Size.PlatformDefault = False
       TabOrder = 12
       RowCount = 1
-      Viewport.Width = 369.000000000000000000
-      Viewport.Height = 145.000000000000000000
+      Viewport.Width = 365.000000000000000000
+      Viewport.Height = 120.000000000000000000
     end
     object Label4: TLabel
       Position.X = 8.000000000000000000
@@ -183,7 +183,7 @@ object Ftroupeau: TFtroupeau
     yRadius = 4.000000000000000000
   end
   object qTroup: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     Left = 328
     Top = 8
   end
@@ -193,7 +193,7 @@ object Ftroupeau: TFtroupeau
     Top = 216
   end
   object qGrid: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     SQL.Strings = (
       'select * from cheptel')
     Left = 344
@@ -224,7 +224,7 @@ object Ftroupeau: TFtroupeau
     end
   end
   object qGrid2: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     SQL.Strings = (
       'select * from cheptel')
     Left = 328

@@ -13,7 +13,7 @@ uses
   FireDAC.Phys, FireDAC.FMXUI.Wait, Data.Bind.Components, Data.Bind.DBScope,
   FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
   FireDAC.Phys.SQLiteWrapper.Stat, System.Rtti, System.Bindings.Outputs,
-  Fmx.Bind.Editors, Data.Bind.EngExt, Fmx.Bind.DBEngExt;
+  Fmx.Bind.Editors, Data.Bind.EngExt, Fmx.Bind.DBEngExt,udb;
 
 type
   TFgestuser = class(TForm)
@@ -46,7 +46,6 @@ type
     cbPren: TComboBox;
     FDQuerProfil: TFDQuery;
     FDQuerMeti: TFDQuery;
-    FDConnection1: TFDConnection;
     BindSourceDB1: TBindSourceDB;
     BindSourceDB2: TBindSourceDB;
     BindingsList1: TBindingsList;

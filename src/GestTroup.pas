@@ -12,7 +12,7 @@ uses
   FMX.Grid.Style, FMX.Grid, FMX.ScrollBox, Fmx.Bind.Grid,
   System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.Controls,
   Data.Bind.EngExt, Fmx.Bind.DBEngExt, Data.Bind.Components, Fmx.Bind.Navigator,
-  Data.Bind.Grid, Data.Bind.DBScope;
+  Data.Bind.Grid, Data.Bind.DBScope,udb;
 
 type
   TFtroupeau = class(TForm)

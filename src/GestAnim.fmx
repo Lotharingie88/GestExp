@@ -97,7 +97,7 @@ object Fanimal: TFanimal
         Size.Width = 57.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
         Text = 'M'#226'le'
       end
       object rbFem: TRadioButton
@@ -107,7 +107,7 @@ object Fanimal: TFanimal
         Size.Width = 81.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
+        TabOrder = 39
         Text = 'Femelle'
       end
     end
@@ -120,32 +120,53 @@ object Fanimal: TFanimal
       Text = 'Type Racial'
       TabOrder = 8
       object cbRpere: TComboBox
+        Items.Strings = (
+          'Charolais'
+          'Crois'#233
+          'Holstein'
+          'Normand'
+          'Parthenay'
+          'Vosgien')
         Position.X = 64.000000000000000000
         Position.Y = 16.000000000000000000
         Size.Width = 97.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
       end
       object cbRmere: TComboBox
+        Items.Strings = (
+          'Charolais'
+          'Crois'#233
+          'Holstein'
+          'Normand'
+          'Parthenay'
+          'Vosgien')
         Position.X = 64.000000000000000000
         Position.Y = 40.000000000000000000
         Size.Width = 97.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
+        TabOrder = 39
       end
       object cbRindiv: TComboBox
+        Items.Strings = (
+          'Charolais'
+          'Crois'#233
+          'Holstein'
+          'Normand'
+          'Parthenay'
+          'Vosgien')
         Position.X = 64.000000000000000000
         Position.Y = 64.000000000000000000
         Size.Width = 97.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 39
+        TabOrder = 40
       end
       object eRacP: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 40
+        TabOrder = 41
         Position.X = 168.000000000000000000
         Position.Y = 16.000000000000000000
         Size.Width = 33.000000000000000000
@@ -154,7 +175,7 @@ object Fanimal: TFanimal
       end
       object eRacM: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 41
+        TabOrder = 42
         Position.X = 168.000000000000000000
         Position.Y = 40.000000000000000000
         Size.Width = 33.000000000000000000
@@ -163,7 +184,7 @@ object Fanimal: TFanimal
       end
       object eRacI: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 42
+        TabOrder = 43
         Position.X = 168.000000000000000000
         Position.Y = 64.000000000000000000
         Size.Width = 33.000000000000000000
@@ -177,7 +198,7 @@ object Fanimal: TFanimal
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
         Text = 'P'#232're'
-        TabOrder = 43
+        TabOrder = 44
       end
       object Label4: TLabel
         Position.X = 16.000000000000000000
@@ -186,7 +207,7 @@ object Fanimal: TFanimal
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
         Text = 'M'#232're'
-        TabOrder = 44
+        TabOrder = 45
       end
       object Label5: TLabel
         Position.X = 16.000000000000000000
@@ -195,7 +216,7 @@ object Fanimal: TFanimal
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         Text = 'Individu'
-        TabOrder = 45
+        TabOrder = 46
       end
       object deDnaiss: TDateEdit
         Date = 44843.000000000000000000
@@ -205,7 +226,7 @@ object Fanimal: TFanimal
         Size.Width = 97.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 46
+        TabOrder = 47
       end
       object Label12: TLabel
         Position.X = 208.000000000000000000
@@ -214,7 +235,7 @@ object Fanimal: TFanimal
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         Text = 'Date S :'
-        TabOrder = 47
+        TabOrder = 48
       end
     end
     object eIdentP: TEdit
@@ -250,7 +271,7 @@ object Fanimal: TFanimal
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
         Text = 'Oui'
       end
       object rbEmbn: TRadioButton
@@ -260,7 +281,7 @@ object Fanimal: TFanimal
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
+        TabOrder = 39
         Text = 'Non'
       end
     end
@@ -287,14 +308,14 @@ object Fanimal: TFanimal
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
         Text = 'Oui'
       end
       object rbAvorn: TRadioButton
         GroupName = 'avor'
         Position.X = 104.000000000000000000
         Position.Y = 16.000000000000000000
-        TabOrder = 38
+        TabOrder = 39
         Text = 'Non'
       end
     end
@@ -313,7 +334,7 @@ object Fanimal: TFanimal
         Size.Width = 41.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
         Text = 'Oui'
       end
       object rbJumn: TRadioButton
@@ -323,7 +344,7 @@ object Fanimal: TFanimal
         Size.Width = 57.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
+        TabOrder = 39
         Text = 'Non'
       end
     end
@@ -351,7 +372,7 @@ object Fanimal: TFanimal
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
         Text = 'Oui'
       end
       object rbPesn: TRadioButton
@@ -361,7 +382,7 @@ object Fanimal: TFanimal
         Size.Width = 65.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
+        TabOrder = 39
         Text = 'Non'
       end
       object lbMaj: TLabel
@@ -375,7 +396,7 @@ object Fanimal: TFanimal
         TextSettings.Font.StyleExt = {00040000000200000004000000}
         TextSettings.FontColor = claBrown
         Text = 'Mis '#224' jour le :'
-        TabOrder = 39
+        TabOrder = 40
       end
     end
     object Label1: TLabel
@@ -464,7 +485,7 @@ object Fanimal: TFanimal
         Size.Width = 105.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
       end
     end
     object GroupBox8: TGroupBox
@@ -481,7 +502,7 @@ object Fanimal: TFanimal
         Size.Width = 105.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
       end
     end
     object GroupBox9: TGroupBox
@@ -494,7 +515,7 @@ object Fanimal: TFanimal
       TabOrder = 27
       object eExplOr: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
-        TabOrder = 37
+        TabOrder = 38
         Position.X = 16.000000000000000000
         Position.Y = 16.000000000000000000
         Size.Width = 121.000000000000000000
@@ -539,7 +560,7 @@ object Fanimal: TFanimal
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 37
+        TabOrder = 38
         Text = 'Oui'
       end
       object rbIan: TRadioButton
@@ -549,7 +570,7 @@ object Fanimal: TFanimal
         Size.Width = 49.000000000000000000
         Size.Height = 17.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 38
+        TabOrder = 39
         Text = 'Non'
       end
     end
@@ -565,8 +586,53 @@ object Fanimal: TFanimal
     end
   end
   object qAnim: TFDQuery
-    ConnectionName = 'gexpl'
+    Connection = DataModule3.FDGesEXP
     Left = 296
     Top = 288
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DataModule3.FDQuerRace
+    ScopeMappings = <>
+    Left = 176
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Liaisons rapides'
+      Control = cbRpere
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'racnom'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Liaisons rapides'
+      Control = cbRmere
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'racnom'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField3: TLinkFillControlToField
+      Category = 'Liaisons rapides'
+      Control = cbRindiv
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'racnom'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
   end
 end

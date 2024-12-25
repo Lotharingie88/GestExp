@@ -15,7 +15,7 @@ uses
   System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
   Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.DBScope,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
-  FMX.ListView;
+  FMX.ListView,udb;
 
 type
   TFpara = class(TForm)
@@ -57,7 +57,6 @@ type
     LinkFillControlToField1: TLinkFillControlToField;
     BindSourceDB2: TBindSourceDB;
     LinkFillControlToField2: TLinkFillControlToField;
-    BindingsList2: TBindingsList;
     ListView1: TListView;
     ListView2: TListView;
     lbElev: TListBox;

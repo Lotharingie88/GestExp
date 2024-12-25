@@ -9,7 +9,9 @@ uses
   FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   FireDAC.Stan.Async, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client,system.Rtti, FMX.DateTimeCtrls;
+  FireDAC.Comp.Client,system.Rtti, FMX.DateTimeCtrls,udb,
+  System.Bindings.Outputs, Fmx.Bind.Editors, Data.Bind.EngExt,
+  Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.DBScope;
 
 type
   TFanimal = class(TForm)
@@ -74,6 +76,11 @@ type
     Label12: TLabel;
     deDsor: TDateEdit;
     lbMaj: TLabel;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkFillControlToField1: TLinkFillControlToField;
+    LinkFillControlToField2: TLinkFillControlToField;
+    LinkFillControlToField3: TLinkFillControlToField;
     procedure btQuitClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btModifClick(Sender: TObject);
@@ -760,27 +767,27 @@ begin
            end;
      //edNom.Text:=qAnim.FieldByName('nom').AsString;
      qAnim.Close;
-     qAnim.SQL.Clear;
-     qAnim.SQL.Text :='select racnom,codrace from race';
-     qAnim.Open;
-      cbRpere.Items.Clear();
-     cbRpere.Items.Add('');
-     cbRpere.ItemIndex:=0;
-      cbRmere.Items.Clear();
-     cbRmere.Items.Add('');
-     cbRmere.ItemIndex:=0;
-      cbRindiv.Items.Clear();
-     cbRindiv.Items.Add('');
-     cbRindiv.ItemIndex:=0;
-     while not qAnim.Eof do
-           begin
-               cbRpere.Items.Add(qAnim.FieldByName('racnom').AsString);
-               cbRmere.Items.Add(qAnim.FieldByName('racnom').AsString);
-               cbRindiv.Items.Add(qAnim.FieldByName('racnom').AsString);
-               qAnim.Next;
-           end;
-     //edNom.Text:=qAnim.FieldByName('nom').AsString;
-     qAnim.Close;
+//     qAnim.SQL.Clear;
+//     qAnim.SQL.Text :='select racnom,codrace from race';
+//     qAnim.Open;
+//      cbRpere.Items.Clear();
+//     cbRpere.Items.Add('');
+//     cbRpere.ItemIndex:=0;
+//      cbRmere.Items.Clear();
+//     cbRmere.Items.Add('');
+//     cbRmere.ItemIndex:=0;
+//      cbRindiv.Items.Clear();
+//     cbRindiv.Items.Add('');
+//     cbRindiv.ItemIndex:=0;
+//     while not qAnim.Eof do
+//           begin
+//               cbRpere.Items.Add(qAnim.FieldByName('racnom').AsString);
+//               cbRmere.Items.Add(qAnim.FieldByName('racnom').AsString);
+//               cbRindiv.Items.Add(qAnim.FieldByName('racnom').AsString);
+//               qAnim.Next;
+//           end;
+//     //edNom.Text:=qAnim.FieldByName('nom').AsString;
+//     qAnim.Close;
    {$IF Defined(ANDROID) or Defined(IOS)  }
         btQuit.Visible:=False;
    {$ENDIF}
